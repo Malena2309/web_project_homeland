@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(https://practicum-content.s3.us-west-1.amazonaws.com/frontend-developer/responsive/moved_Inter-Regular.woff);
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url(https://practicum-content.s3.us-west-1.amazonaws.com/frontend-developer/responsive/moved_Inter-Bold.woff2);
+    font-weight: bold;
+  }
+  
+  .page {
+   background-color: rgb(10, 16, 16);
+   color: white;
+   font-family: Inter;
+  }
+
+  .header {
+   left: 148px;
+   height: 983px;
+   width: 984px;
+   position: relative;
+   display: flex;
+   align-items: center;
+  }
+
+  .logo__header {
+    position: absolute;
+    left: 505;
+    top: 0px;
+    z-index: 0;
+    height: 70px;
+    width: 270px;
+    font-size: 64px;
+    margin-bottom: 90;
+  }
+
+  .header__title {
+    font-family: Inter;
+    margin: 0;
+    margin-left: 148px;
+    margin-top: 194;
+    width: 793px;
+    height: 200px;
+    top: 194px;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 100px;
+    letter-spacing: 0em;
+    text-align: center; 
+  }
+
+  .header__subtitle {
+    position: absolute; 
+    margin: 0;
+    width: 720px;
+    margin-top: 32px;
+    height: 72px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;    
+  }
+
+  .header__image {
+   height: 615px;
+   width: 984px;
+   margin-top: 562px;
+   margin-bottom: 92px;
+  }
+
+  .intro {
+   top: 1269px;
+   margin-left: 148px;
+  }
+
+  .intro__title{
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 1017px;
+    height: 116px;
+    top: 1269px;
+  }
+
+  .intro__text1{
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    width: 722px;
+    height: 136px;
+    top: 1425px;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+   .intro__text1_author{
+    margin: 0;
+    width: 720px;
+    height: 34px;
+    left: 148px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
+   }
+
+  .intro__text2 {
+    width: 720px;
+    height: 182px;
+    top: 1603px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 442px;
+    width: 1184px;
+    margin-left: 48px;
+    gap: 10px; 
+}
+
+  .grid__foto{
+    width: 284px;
+    height: 213px;
+  }
+
+  .content{
+    width: 987px;
+    height: 4098px;
+    margin-left: 145px;
+  }
+
+.place {
+display: grid;
+grid-template-columns: 460px 484px;
+grid-template-rows: 152px 230px 230px 48px;
+gap: 10px; 
+}
+
+.place__title {
+grid-column: 1;
+grid-row: 1;
+}
+
+.place__website {
+grid-column: 2;
+grid-row: 1;
+}
+
+.place__image {
+grid-column: 1;
+grid-row: 2 / 4;
+}
+
+.place__paragraph1 {
+grid-column: 2;
+grid-row: 2;
+}
+
+.place__paragraph2 {
+grid-column: 2;
+grid-row: 3;
+}
+
+.place__frame {
+grid-column: 1;
+grid-row: 4;
+}
