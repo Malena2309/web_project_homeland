@@ -1,0 +1,6 @@
+.places {
+    width: 987px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

@@ -1,0 +1,13 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 442px;
+    width: 1184px;
+    gap: 10px; 
+  }
+
+  .grid__foto{
+    width: 284px;
+    height: 213px;
+  }

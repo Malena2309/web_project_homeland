@@ -1,0 +1,33 @@
+.action-button {
+    width: 355px;
+    height: 48px;
+    border-radius: 4px;
+    background: #0278FE;
+    text-decoration: none;
+    display: block;
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .action-button__paragraph {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .action-button_place_cover {
+    z-index: 1;
+    margin: 0;
+    width: 198;
+    height: 48;
+    padding: 13px, 20px, 13px, 20px;
+    border-radius: 4px;
+    gap: 10px;
+  }
