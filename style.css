@@ -1,15 +1,3 @@
-@font-face {
-    font-family: 'Inter';
-    src: url(https://practicum-content.s3.us-west-1.amazonaws.com/frontend-developer/responsive/moved_Inter-Regular.woff);
-    font-weight: normal;
-  }
-  
-  @font-face {
-    font-family: 'Inter';
-    src: url(https://practicum-content.s3.us-west-1.amazonaws.com/frontend-developer/responsive/moved_Inter-Bold.woff2);
-    font-weight: bold;
-  }
-  
   .page {
     background-color: rgb(10, 16, 16);
     color: white;
@@ -34,20 +22,15 @@
 
   .header__title {
     width: 793px;
-    height: 200px;
     font-size: 96px;
     font-weight: 900;
-    line-height: 100px;
-    letter-spacing: 0em;
     text-align: center; 
   }
 
   .header__subtitle {
     width: 720px;
-    height: 72px;
     font-size: 30px;
     font-weight: 400;
-    line-height: 36px;
     text-align: center;    
   }
 
@@ -71,12 +54,7 @@
   .intro__title{
     font-size: 54px;
     font-weight: 900;
-    line-height: 58px;
-    letter-spacing: 0em;
     text-align: left;
-    width: 1017px;
-    height: 116px;
-    top: 1269px;
   }
 
   .intro__text1{
@@ -84,10 +62,7 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 34px;
-    letter-spacing: 0em;
     width: 722px;
-    height: 136px;
-    top: 1425px;
     justify-content: space-between;
     text-align: left;
     margin-bottom: 0;
@@ -96,41 +71,33 @@
   .intro__text1_author{
     margin: 0;
     width: 720px;
-    height: 34px;
-    left: 148px;
-    font-family: Inter;
     font-size: 24px;
     font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0em;
     text-align: right;
   }
 
   .intro__text2 {
     width: 720px;
-    height: 182px;
-    top: 1603px;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    letter-spacing: 0em;
     display: flex;
     justify-content: space-between;
     text-align: left;
+    margin-bottom: 60px;
   }
 
   .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 442px;
     width: 1184px;
     gap: 10px; 
+    margin-bottom: 60px;
   }
 
   .grid__foto{
     width: 284px;
-    height: 213px;
   }
 
   .places {
@@ -138,6 +105,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 92px 0 105 0;
+    row-gap: 48px;
   }
 
   .place {
@@ -145,17 +114,17 @@
     grid-template-columns: 460px 484px;
     grid-template-rows: auto 460px auto;
     gap: 10px; 
+    margin-bottom: 60px;
   }
 
   .place__title {
     grid-column: 1;
     grid-row: 1;
-    font-family: Inter;
     font-size: 72px;
     font-weight: 900;
     line-height: 76px;
-    letter-spacing: 0em;
     text-align: left;
+    margin: 0;
   }
 
   .place__website {
@@ -164,29 +133,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: end;
+    gap: 8px;
   }
 
   .place__url-heading {
     width: 58px;
-    height: 15px;
-    font-family: Inter;
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
-    letter-spacing: 0.12em;
     text-align: left;
   }
 
   .place__artist {
     width: 456px;
-    height: 22px;
-    font-family: Inter;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
-    letter-spacing: 0em;
     text-align: left;
+    color:#FFFFFF;
     margin: 0;
+    text-decoration: none;
   }
 
   .place__image {
@@ -205,7 +172,6 @@
   }
 
   .place__paragraph {
-    font-family: Inter;
     font-size: 18px;
     font-weight: 400;
     line-height: 29px;
@@ -220,7 +186,6 @@
     border-radius: 4px;
     background: #0278FE;
     text-decoration: none;
-    display: block;
     grid-column: 1;
     grid-row: 3;
     display: flex;
@@ -231,7 +196,6 @@
   .action-button__paragraph {
     color: #FFF;
     text-align: center;
-    font-family: Inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -250,7 +214,6 @@
 
   .cover__title {
     width: 656px;
-    font-family: Inter;
     font-size: 72px;
     font-weight: 900;
     line-height: 76px;
@@ -263,7 +226,6 @@
 
   .cover__text {
     width: 280px;
-    font-family: Inter;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -287,55 +249,66 @@
   .action-button_place_cover {
     z-index: 1;
     margin: 0;
-    width: 198;
-    height: 48;
-    padding: 13px, 20px, 13px, 20px;
-    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    width: 198px;
     gap: 10px;
   }
 
   .footer{
-    width: 191px;
-    height: 16px;
+    background-color: black;
+    margin: 92px 0 24 0;
   }
 
   .footer__author{
-    font-family: Inter;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
     text-align: right;
+    color:#FFFFFF;
   }
 
   /* tablet */
   @media screen and (max-width: 1279px) and (min-width:780px) {
+   
+   
    .header__logo {
     width: 270px;
     height: 70px;
    }
 
    .header__title {
+    width: 793px;
     font-weight: 900px;
     size: 96px;
     line-height: 100px;
    }
 
    .header__subtitle {
+    width: 720px;
     font-weight: 400px;
     size: 30px;
     line-height: 36px;
    }
 
    .header__image {
-    width: 768px;
+    width: 100%;
     height: 480px;
+    border-style: none;
+   }
+
+   .intro {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
    }
   
    .intro__title {
     font-weight: 900px;
     font-size: 54px;
     line-height: 58px;
+    text-align: left;
    }
   
    .intro__text1 {
@@ -352,12 +325,25 @@
 
    .grid {
     width: 720px;
-    height: 1104px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
    }
 
    .grid__foto {
     width: 352px;
-    height: 264px;
+   }
+
+   .places {
+    width: 720px;
+   }
+
+   .place {
+    display: grid;
+    grid-template-columns: 355px 352px;
+    grid-template-rows: auto 340px auto;
+    gap: 10px; 
    }
 
    .place__title {
@@ -368,14 +354,14 @@
    }
 
    .place__website {
-    width: 295px;
-    height: 67px;
+    width: 352px;
    }
 
    .place__url-heading {
     font-weight: 400px;
     font-size: 12px;
     line-height: 14.52px;
+    text-align: left;
    }
 
    .place__artist {
@@ -392,32 +378,77 @@
    .place__paragraphs {
     font-weight: 400px;
     font-size: 16px;
-    line-height: 26.08px;
    }
 
    .action__button {
     width: 355px;
     height: 48px;
-    padding: 13px, 20px, 13px, 20px;
+    padding: 13px 20px 13px 20px;
     gap: 10px;
    }
+
+   .action-button {
+    width: 355px;
+    height: 48px;
+    border-radius: 4px;
+    background: #0278FE;
+    text-decoration: none;
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
    .cover {
     width: 768px;
     height: 746px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
    }
 
    .cover__title {
     font-weight: 900px;
     font-size: 72px;
     line-height: 76px;
+    margin: 0;
    }
 
    .cover__subtitle {
     font-weight: 400px;
     font-size: 18px;
     line-height: 22px;
+    margin: 0;
    }
+
+   .cover__text{
+
+   }
+
+   .cover__overlay {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .cover__background {
+    width: 100%;
+  }
+
+  .action-button_place_cover {
+    z-index: 1;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    width: 198px;
+    gap: 10px;
+  }
 
    .footer {
     width: 191px;
@@ -428,127 +459,179 @@
     font-weight: 400px;
     font-size: 14px;
     line-height: 16px;
+    color: white;
    }
   }
+  
 
    /* mobile */
-  @media screen and (max-width: 779px) and (min-width: 320px) {
-    .header__logo {
-      width: 200px;
-      height: 51.85px;
+  @media screen and (max-width: 779px) and (min-width: 320px) {  
+     .header__logo {
+       width: 200px;
+       height: 51.85px;
      }
   
      .header__title {
-      font-weight: 900px;
-      size: 40px;
-      line-height: 44px;
+       width: 288px;
+       font-weight: 900;
+       font-size: 40px;
+       line-height: 44px;
+       text-align: center;
      }
   
      .header__subtitle {
-      font-weight: 400px;
-      size: 16px;
-      line-height: 20px;
+       width: 288px;
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 20px;
      }
   
      .header__image {
-      width: 320px;
-      height: 200px;
+       width: 320px;
+       height: 200px;
      }
     
      .intro__title {
-      font-weight: 900px;
-      font-size: 32px;
-      line-height: 35px;
+       width: 288px;
+       font-weight: 900;
+       font-size: 32px;
+       line-height: 35px;
+       margin-bottom: 0;
      }
     
      .intro__text1 {
-      font-weight: 400px;
-      font-size: 24px;
-      line-height: 30px;
+       width: 288px;
+       font-weight: 400;
+       font-size: 24px;
+       line-height: 30px;
      }
   
      .intro__text2 {
-      font-weight: 400px;
-      font-size: 16px;
-      line-height: 26.08px;
+       width: 288px;
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 26.08px;
      }
   
      .grid {
-      width: 288px;
-      height: 1812px;
+       width: 288px;
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       grid-template-rows: repeat(8, 1fr);
+       gap: 10px;
      }
   
      .grid__foto {
-      width: 288px;
-      height: 216px;
+       width: 288px;
+       height: 216px;
+     }
+
+     .places {
+       width: 288px;
+     }
+
+     .place {
+       display: grid;
+       grid-template-columns: 288px;
+       gap: 10px; 
      }
   
      .place__title {
-      width: 288px;
-      font-weight: 900px;
-      font-size: 32px;
-      line-height: 35px;
+       width: 288px;
+       font-weight: 900px;
+       font-size: 32px;
+       line-height: 35px;
      }
   
      .place__website {
-      width: 288px;
-      height: 67px;
+       width: 288px;
      }
   
      .place__url-heading {
-      font-weight: 400px;
-      font-size: 12px;
-      line-height: 14.52px;
+       font-weight: 400px;
+       font-size: 12px;
+       line-height: 14.52px;
      }
   
      .place__artist {
-       font-weight: 400px;
-       font-size: 18px;
-       line-height: 22px;
+        font-weight: 400px;
+        font-size: 18px;
+        line-height: 22px;
      }
   
      .place__image {
-      width: 320px;
-      height: 320px;
+       width: 320px;
+       height: 320px;
      }
   
      .place__paragraphs {
-      font-weight: 400px;
-      font-size: 16px;
-      line-height: 26.08px;
+       font-weight: 400px;
+       font-size: 16px;
+       line-height: 26.08px;
      }
   
      .action__button {
-      width: 288px;
-      height: 48px;
-      gap: 10px;
+       width: 288px;
+       height: 48px;
+       gap: 10px;
      }
   
+     .action-button__paragraph {
+       color: #FFF;
+       text-align: center;
+       font-size: 14px;
+       font-style: normal;
+       font-weight: 600;
+       line-height: 16.94;
+     }
+
      .cover {
-      width: 321.26px;
-      height: 254px;
+       width: 321.26px;
+       height: 254px;
      }
   
      .cover__title {
-      font-weight: 900px;
-      font-size: 32px;
-      line-height: 35px;
+       font-weight: 900px;
+       font-size: 32px;
+       line-height: 35px;
      }
   
      .cover__subtitle {
-      font-weight: 400px;
-      font-size: 14px;
-      line-height: 16px;
+       font-weight: 400px;
+       font-size: 14px;
+       line-height: 16px;
      }
   
+     .cover__overlay {
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: 0;
+       width: 100%;
+    }
+  
+    .cover__background {
+       width: 321.26px;
+    }
+  
+    .action-button_place_cover {
+       z-index: 1;
+       margin: 0;
+       font-size: 18px;
+       font-weight: 600;
+       line-height: 21.78px;
+       width: 198px;
+       gap: 10px;
+    }
+
      .footer {
-      width: 191px;
-      height: 14px;
+       width: 191px;
      }
   
      .footer__copyright {
-      font-weight: 400px;
-      font-size: 14px;
-      line-height: 14px;
+       font-weight: 400px;
+       font-size: 14px;
+       line-height: 14px;
+       color: white;
      }
   }
