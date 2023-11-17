@@ -140,9 +140,13 @@
   .place__url-heading {
     width: 58px;
     font-size: 12px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 15px;
+    line-height: normal;
     text-align: left;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    gap: 48px;
   }
 
   .place__artist {
@@ -154,6 +158,10 @@
     color:#FFFFFF;
     margin: 0;
     text-decoration: none;
+  }
+
+  .place__artist:hover {
+    opacity: 0.7;
   }
 
   .place__image {
@@ -193,6 +201,10 @@
     justify-content: center;
   }
 
+  .action-button:hover {
+    opacity: 0.7;
+  }
+
   .action-button__paragraph {
     color: #FFF;
     text-align: center;
@@ -211,6 +223,7 @@
     align-items: center;
     justify-content: center;
   }
+
 
   .cover__title {
     width: 656px;
@@ -234,17 +247,26 @@
     color:#FFFFFF;
     z-index: 1;
   }
-
+  
+  
   .cover__overlay {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
-  }
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+  .cover__overlay:hover {
+    opacity: 1; 
+}
 
   .cover__background {
-
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  } 
 
   .action-button_place_cover {
     z-index: 1;
@@ -422,10 +444,6 @@
     font-size: 18px;
     line-height: 22px;
     margin: 0;
-   }
-
-   .cover__text{
-
    }
 
    .cover__overlay {
