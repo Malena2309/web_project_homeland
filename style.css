@@ -254,13 +254,14 @@
     top: 0;
     left: 0;
     z-index: 0;
-    opacity: 0; 
     transition: opacity 0.3s ease;
 }
 
   .cover__overlay:hover {
-    opacity: 1; 
+    opacity: .5; 
 }
+
+
 
   .cover__background {
   position: absolute;
@@ -278,6 +279,10 @@
     gap: 10px;
   }
 
+  .action-button_place_cover:hover ~ .cover__overlay {
+    opacity: .5;
+  }
+
   .footer{
     background-color: black;
     margin: 92px 0 24 0;
@@ -292,7 +297,7 @@
   }
 
   /* tablet */
-  @media screen and (max-width: 1279px) and (min-width:780px) {
+  @media screen and (max-width: 1279px) and (min-width:768px) {
    
    
    .header__logo {
@@ -483,7 +488,7 @@
   
 
    /* mobile */
-  @media screen and (max-width: 779px) and (min-width: 320px) {  
+  @media screen and (max-width: 767px) and (min-width: 320px) {  
      .header__logo {
        width: 200px;
        height: 51.85px;
@@ -508,7 +513,9 @@
        width: 320px;
        height: 200px;
      }
-    
+    .intro {
+      width:288px;
+    }
      .intro__title {
        width: 288px;
        font-weight: 900;
@@ -545,12 +552,13 @@
      }
 
      .places {
-       width: 288px;
+       width: 320px;
      }
 
      .place {
        display: grid;
-       grid-template-columns: 288px;
+       grid-template-columns: 320px;
+       grid-template-rows: repeat(5, auto);
        gap: 10px; 
      }
   
@@ -559,10 +567,16 @@
        font-weight: 900px;
        font-size: 32px;
        line-height: 35px;
+       grid-column: 1;
+       grid-row: 1;
+       margin: 0 auto;
      }
   
      .place__website {
        width: 288px;
+       grid-column: 1;
+       grid-row: 2;
+       margin: 0 auto;
      }
   
      .place__url-heading {
@@ -580,18 +594,27 @@
      .place__image {
        width: 320px;
        height: 320px;
+       grid-column: 1;
+       grid-row: 3;
      }
   
      .place__paragraphs {
        font-weight: 400px;
        font-size: 16px;
        line-height: 26.08px;
+       grid-column: 1;
+       grid-row: 4;
+       width: 288px;
+       margin: 0 auto;
      }
   
-     .action__button {
+     .action-button {
        width: 288px;
        height: 48px;
        gap: 10px;
+       grid-column: 1;
+       grid-row: 5;
+       margin: 0 auto;
      }
   
      .action-button__paragraph {
@@ -604,7 +627,7 @@
      }
 
      .cover {
-       width: 321.26px;
+       width: 320px;
        height: 254px;
      }
   
@@ -626,10 +649,12 @@
        left: 0;
        z-index: 0;
        width: 100%;
+       height: 100%;
     }
   
     .cover__background {
-       width: 321.26px;
+       width: 100%;
+       height: 100%;
     }
   
     .action-button_place_cover {
