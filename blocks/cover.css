@@ -1,36 +1,116 @@
 .cover {
-    width: 1184px;
-    height: 740px;
+  width: 1184px;
+  height: 740px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.cover__title {
+  width: 656px;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 1;
+  position: relative;
+ }
+
+.cover__text {
+  width: 280px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color:#FFFFFF;
+  z-index: 1;
+}
+
+
+.cover__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cover__overlay:hover {
+  opacity: .5; 
+}
+
+
+
+.cover__background {
+position: absolute;
+top: 0;
+left: 0;
+} 
+
+/* tablet */
+@media screen and (max-width: 1279px) and (min-width:768px) {
+  .cover {
+    width: 768px;
+    height: 746px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+   }
+
+   .cover__title {
+    font-weight: 900px;
+    font-size: 72px;
+    line-height: 76px;
+    margin: 0;
+   }
+
+   .cover__subtitle {
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+   }
+
+   .cover__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%
+    z-index: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .cover__background {
+    width: 100%;
+    height: 100%
+    object-fit: cover;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) and (min-width: 320px) {  
+  .cover {
+    width: 320px;
+    height: 254px;
   }
 
   .cover__title {
-    width: 656px;
-    font-family: Inter;
-    font-size: 72px;
-    font-weight: 900;
-    line-height: 76px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FFFFFF;
-    z-index: 1;
-    position: relative;
-   }
+    font-weight: 900px;
+    font-size: 32px;
+    line-height: 35px;
+  }
 
-  .cover__text {
-    width: 280px;
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: center;
-    color:#FFFFFF;
-    z-index: 1;
+  .cover__subtitle {
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .cover__overlay {
@@ -38,8 +118,12 @@
     top: 0;
     left: 0;
     z-index: 0;
-  }
+    width: 100%;
+    height: 100%;
+ }
 
-  .cover__background {
-
-  }
+ .cover__background {
+    width: 100%;
+    height: 100%;
+ }
+}
