@@ -39,7 +39,7 @@
    }
 
    .header__title {
-    width: 793px;
+    width: 720px;
     font-weight: 900px;
     size: 96px;
     line-height: 100px;
@@ -61,6 +61,10 @@
 
   /* mobile */
   @media screen and (max-width: 767px) and (min-width: 320px) {  
+    .header {
+      width: 100%;
+    }
+
     .header__logo {
       width: 200px;
       height: 51.85px;
